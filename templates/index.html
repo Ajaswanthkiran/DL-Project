@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image</title>
+    <style>body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+     background-color:#ADD8E6;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            text-align: center;
+            width: 500px;
+            height: 500px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}</style>
+</head>
+<body>
+    <h1>FACIAL EXPRESSION CLASSIFICATION</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <br><br><br>
+        <button type="submit" name="ann_binary" value="ann_binary">ann_binary</button>
+        <button type="submit" name="model2" value="model2">model2</button><br>
+        <button type="submit" name="compare_optimizers" value="compare_optimizers">compare_optimizers</button>
+        <button type="submit" name="ann_categorical" value="ann_categorical">ann_categorical</button><br>
+        <button type="submit" name="mini_batch" value="mini_batch">mini_batch</button>
+        <button type="submit" name="cnn" value="cnn">cnn</button><br>
+        <button type="submit" name="cnn_regularizer" value="cnn_regularizer">cnn_regularizer</button>
+        <button type="submit" name="vgg" value="vgg">vgg</button><br>
+        <button type="submit" name="rnn" value="rnn">rnn</button>
+        <button type="submit" name="cnn+lstm" value="cnn+lstm">cnn+lstm</button><br>
+        <button type="submit" name="autoencoder" value="autoencoder">autoencoder</button>
+        <button type="submit" name="denoise autoencoder" value="denoise autoencoder">denoise autoencoder</button><br>
+        <button type="submit" name="autoencoder+resnet" value="autoencoder+resnet">autoencoder+resnet</button>
+        <button type="submit" name="vae" value="vae">vae</button><br>
+
+    </form>
+</body>
+</html>
